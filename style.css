@@ -1,0 +1,188 @@
+/* Fonts */
+@import url('http://fonts.googleapis.com/css?family=Arbutus&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Akronim&subset=latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Aladin&subset=latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Amarante&subset=latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Mogra&subset=latin,latin-ext');
+/* ..... */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+h1{
+    font-family: 'Arbutus', sans-serif;
+}
+h2{
+    font-family: 'Aladin', sans-serif;
+    font-size: 3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h3{
+    font-family: 'Akronim', sans-serif;
+    font-size:  3em;
+}
+p{
+    font-family: 'Amarante', sans-serif;
+}
+footer{
+    background-color: rgba(99, 79, 79, 0.3);
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main{
+    flex: auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+header{
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Kenia', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header a{
+    width: 2%;
+    height: auto;
+}
+header > a > img{
+    width: 100%;
+    height: 100%;
+}
+header > a > img:hover{
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+#cnt{
+    background-color: rgba(155, 132, 0, 0.363);
+    width: 100%;
+    min-height: 750px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+#desc{
+    width: 60%;
+}
+#cnt > h3, #cnt > h2{
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid rgb(68, 60, 53);
+    align-self: center;
+}
+#cnt2{
+    display: flex;
+    justify-content: space-around;
+}
+#aboutme, #skills, #contact{
+    margin: 30px;
+    display: none;
+}
+#aboutme{
+    display: block;
+    text-align: justify;
+}
+#desc h3{
+    text-align: center;
+}
+#cnt2 img{
+    margin: 30px;
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
+    
+}
+
+#menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+
+}
+#menu li{
+    padding: 20px;
+    font-size: 1.2em;
+    font-family: 'Mogra', sans-serif;
+}
+#menu li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(65, 57, 18, 0.363);
+    border-radius: 10%;
+}
+.skills img{
+    width: 8%;
+    height: 6%;
+    margin: 0;
+}
+.skills img:hover{
+    transform: scale(1.2);
+}
+#cnt2 p{
+    text-align: center;
+}
+#skills p{
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 20px;
+}
+#aboutme p{
+    font-size: 2em;
+    text-align: justify;
+    padding-top: 10px;
+}
+#contact p{
+    font-size: 1.5em;
+    text-align: left;
+}
+#contact img{
+    width: 6%;
+    height: 6%;
+    margin: 10px;
+}
+#contact img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
